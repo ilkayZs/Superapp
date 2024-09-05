@@ -52,7 +52,7 @@ const About = () => {
             Our mission is to empower businesses to thrive in the digital age by providing the tools and expertise they need to innovate, scale, and succeed.
           </p>
           <p className="text-lg text-gray-300">
-            We believe in the transformative power of technology and are committed to building solutions that make a difference. Whether you're a startup or an established enterprise, we're here to help you achieve your goals.
+            We believe in the transformative power of technology and are committed to building solutions that make a difference. Whether you&apos;re a startup or an established enterprise, we&apos;re here to help you achieve your goals.
           </p>
         </div>
       </div>
