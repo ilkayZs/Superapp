@@ -5,7 +5,7 @@ import { CheckCircle } from 'lucide-react'
 
 const About = () => {
   return (
-    <div className="bg-gradient-to-b from-black to-green-900 text-white min-h-screen py-24">
+    <div className="bg-gradient-to-b from-black via-green-900 to-black text-white min-h-screen py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>

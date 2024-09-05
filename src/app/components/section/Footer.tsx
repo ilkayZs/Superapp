@@ -28,7 +28,7 @@ function Footer() {
             Contact
             </Link>
             <Link href="/faqs"  className='text-white hover:text-[#7ed957] text-sm transition-all duration-150 py-2'>
-            Faqs
+            FAQ
             </Link>
             </div>
             <p  className='text-white'>2024 SuperApp. All Rights reserved.</p>

@@ -18,23 +18,23 @@ const FAQs = () => {
   ]
 
   return (
-    <div className="bg-gradient-to-b from-black to-green-900 text-white min-h-screen py-24">
+    <div className="bg-gradient-to-b from-black via-green-900 to-black text-white min-h-screen py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl sm:text-5xl font-bold mb-12 text-center text-[#7ed957]">
-          Frequently Asked Questions
+        <h2 className="text-4xl sm:text-5xl font-bold mb-12 text-center text-white">
+          <span className='text-[#7ed957]'>F</span>requently <span className='text-[#7ed957]'>A</span>sked <span className='text-[#7ed957]'>Q</span>uestions
         </h2>
         <div className="space-y-6">
           {faqs.map((faq, index) => (
-            <div key={index} className="border border-gray-700 rounded-lg">
+            <div key={index} className="border border-teal-950/70 rounded-lg">
               <button
                 onClick={() => toggleAccordion(index)}
-                className="w-full flex items-center justify-between px-6 py-4 text-left bg-gray-800 text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-[#7ed957]"
+                className="w-full flex items-center justify-between px-6 py-4 text-left bg-teal-950/70 text-white hover:bg-teal-950/80 focus:outline-none focus:ring-1 focus:ring-[#7ed957]"
               >
                 <span className="font-semibold">{faq.question}</span>
                 {openIndex === index ? <Minus className="text-[#7ed957]" size={24} /> : <Plus className="text-[#7ed957]" size={24} />}
               </button>
               {openIndex === index && (
-                <div className="px-6 py-4 bg-gray-800">
+                <div className="px-6 py-4 bg-teal-950/90">
                   <p>{faq.answer}</p>
                 </div>
               )}

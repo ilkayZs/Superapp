@@ -80,10 +80,10 @@ function Hero() {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="mt-24"
         >
-          <h2 className="md:text-5xl text-3xl font-bold text-center mb-12 text-[#7ed957]">Success Stories</h2>
+          <h2 className="md:text-5xl text-3xl font-bold text-center mb-12 text-[#7ed957]">Success<span className='text-white'> Stories</span></h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {successStories.map((story) => (
-              <div key={story.id} className="bg-gray-800 p-6 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105">
+              <div key={story.id} className="bg-teal-950 p-6 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105">
                 <h3 className="text-4xl font-bold text-[#7ed957]">{story.stat}</h3>
                 <p className="text-gray-300 mt-2">{story.label}</p>
               </div>
@@ -98,7 +98,7 @@ function Hero() {
         >
           <div className='justify-center items-center text-center'>
             <h1 className="text-4xl sm:text-5xl font-bold mb-6 leading-tight">
-            Ignite Your Vision with SuperApp <span className="text-[#7ed957]">SuperApp</span>
+            Ignite Your Vision with <span className="text-[#7ed957]">SuperApp</span>
             </h1>
             <p className="text-lg text-gray-300">
             Unleash the potential of your ideas with our innovative platform. Seamlessly design, develop, and elevate your applications to new heights with unparalleled ease and efficiency. Empower your digital journey and watch your concepts come to life.
@@ -117,7 +117,7 @@ function Hero() {
         </motion.div>
         {/* Features Section */}
         <div className="mt-44">
-          <h2 className="md:text-5xl text-3xl font-bold text-center mb-12 text-[#7ed957]">Why Choose Us?</h2>
+          <h2 className="md:text-5xl text-3xl font-bold text-center mb-12 text-white">Why Choose Us?</h2>
           <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -125,7 +125,7 @@ function Hero() {
             className="grid grid-cols-1 md:grid-cols-3 gap-8"
           >
             {features.map((feature) => (
-              <div key={feature.id} className="bg-gray-800 p-6 rounded-lg shadow-lg text-center transition-transform transform hover:scale-105 hover:bg-green-900 hover:text-white">
+              <div key={feature.id} className="bg-teal-950/50 p-6 rounded-lg shadow-xl text-center transition-transform transform hover:scale-105 hover:bg-teal-950/80 hover:text-white">
                 <CheckCircle className="text-[#7ed957] mx-auto mb-4" size={40} />
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
                 <p className="text-gray-300">{feature.description}</p>
@@ -136,7 +136,7 @@ function Hero() {
 
         {/* Our Mission Section */}
         <h2 className="md:text-5xl text-3xl font-bold text-center mb-12 text-white mt-24">{mission.title}</h2>
-        <div className="mt-4 bg-gray-800 rounded-lg flex">         
+        <div className="mt-4 bg-teal-950/50 shadow-2xl rounded-lg flex p-4">         
             <p className="text-xl p-2 text-gray-300 text-center">{mission.text}</p>
         </div>
 
@@ -162,7 +162,7 @@ function Hero() {
                 className="inline-block mx-4"
                 whileHover={{ scale: 1.05 }}  // Adds scaling on hover
               >
-                <div className="bg-green-800 bg-opacity-50 p-6 rounded-lg w-80 h-48 flex flex-col justify-between">
+                <div className="bg-teal-950 shadow-xl bg-opacity-50 p-6 rounded-lg w-80 h-48 flex flex-col justify-between">
                   <p className="text-white mb-4 overflow-hidden text-ellipsis line-clamp-3">{testimonial.text}</p>
                   <div className='flex gap-3 flex-row'>
                     <Image

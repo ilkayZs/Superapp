@@ -22,7 +22,6 @@ export default function RootLayout({
       <body className={poppins.className}>{children}
       <Analytics/>
       </body>
-     
     </html>
   );
 }

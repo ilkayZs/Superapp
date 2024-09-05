@@ -28,14 +28,14 @@ const pricingPlans = [
 
 function PricingTable() {
   return (
-    <div className="bg-gradient-to-b from-black to-green-900 text-white py-24 sm:py-32 h-full">
+    <div className="bg-gradient-to-b from-black via-green-900 to-black text-white py-24 sm:py-32 h-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-4xl sm:text-5xl font-bold mb-12 text-white">
           Pricing Plans
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {pricingPlans.map((plan) => (
-            <div key={plan.id} className={`relative bg-green-800 bg-opacity-50 p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 ${plan.popular ? 'border-2 border-[#7ed957]' : ''}`}>
+            <div key={plan.id} className={`relative bg-teal-950/80 bg-opacity-50 p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 ${plan.popular ? 'border-2 border-[#7ed957]' : ''}`}>
               {plan.popular && (
                 <div className="absolute top-0 right-0 bg-[#7ed957] text-black font-semibold px-4 py-2 rounded-bl-lg">
                   Most Popular

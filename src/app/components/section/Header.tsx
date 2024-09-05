@@ -57,7 +57,7 @@ function Header() {
             <Link href="/pricing" className='text-white hover:text-[#7ed957] text-sm transition-all duration-150 py-2'>
               Pricing
             </Link>
-            <Link href="/contact" className='text-white hover:text-[#7ed957] text-sm transition-all duration-150 py-2'>
+            <Link href="/Contact" className='text-white hover:text-[#7ed957] text-sm transition-all duration-150 py-2'>
               Contact
             </Link>
             <Link href="/sign-in" className='mt-4 p-2 rounded-md bg-[#7ed957]/90 text-white hover:bg-[#74d849] transition-all duration-150'>
